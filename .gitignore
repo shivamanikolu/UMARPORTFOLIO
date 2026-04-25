@@ -66,3 +66,26 @@ Thumbs.db
 WEBSITE_STANDARDS.md
 temp_screenshots/
 browser/
+
+# IDEs and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Backups and archives
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.bak
+*.old
+
+# Database
+*.sql
+*.sqlite
+
+# Security/Credentials (redundant but safe)
+credentials.json
+secrets.json
+config.private.json
