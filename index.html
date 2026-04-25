@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Master the stock market with Umar Farooq Shaik. Trusted stock market advisor and educator offering consultations and strategies in Andhra Pradesh." />
+  <link rel="canonical" href="https://umar-portfolio.vercel.app/" />
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Umar Farooq Shaik - Stock Market Advisor">
+  <meta property="og:description" content="Your guide to mastering the stock market. Learn technical and fundamental analysis today.">
+  <meta property="og:url" content="https://umar-portfolio.vercel.app/">
+  <meta property="og:type" content="website">
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Farooq Infrastructures Pvt Ltd",
+    "url": "https://umar-portfolio.vercel.app/",
+    "email": "farooqinfrastructures9@gmail.com",
+    "description": "Trusted stock market advisor and educational platform based in Andhra Pradesh."
+  }
+  </script>
+
+  <title>Umar Farooq Shaik | Stock Market Advisor</title>
+  <!-- DNS Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" async></script>
+  <style>
+    :root {
+      --dark: #070c14;
+      --darker: #04080f;
+      --blue: #1a3a6b;
+      --blue-mid: #1e5fa8;
+      --blue-glow: #3a9fd6;
+      --teal: #1db8c4;
+      --teal-light: #30d8e6;
+      --gold: #c9912a;
+      --gold-light: #e8b84b;
+      --white: #f0f5ff;
+      --gray: #8a9bb8;
+      --card-bg: #0b1220;
+      --card-border: rgba(58,159,214,0.15);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { background: var(--darker); color: var(--white); font-family: 'DM Sans', sans-serif; overflow-x: hidden; }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--darker); }
+    ::-webkit-scrollbar-thumb { background: var(--blue-mid); border-radius: 3px; }
+    body::before {
+      content: ''; position: fixed; inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none; z-index: 9999; opacity: 0.35;
+    }
+    /* NAV */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      padding: 18px 5%; display: flex; align-items: center; justify-content: space-between;
+      background: rgba(4,8,15,0.88); backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(58,159,214,0.1); transition: all 0.3s;
+    }
+    nav.scrolled { padding: 12px 5%; border-bottom-color: rgba(58,159,214,0.28); }
+    .logo { font-family: 'Playfair Display', serif; font-size: 1.35rem; font-weight: 700; color: var(--white); text-decoration: none; display: flex; align-items: center; gap: 10px; }
+    .logo-icon { width: 38px; height: 38px; background: linear-gradient(135deg, var(--blue), var(--blue-mid)); border-radius: 9px; display: flex; align-items: center; justify-content: center; font-size: 1rem; border: 1px solid rgba(58,159,214,0.3); }
+    .logo span { color: var(--teal); }
+    .nav-links { display: flex; gap: 30px; list-style: none; }
+    .nav-links a { color: var(--gray); text-decoration: none; font-size: 0.87rem; font-weight: 500; letter-spacing: 0.04em; transition: color 0.3s; position: relative; }
+    .nav-links a::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 1px; background: var(--teal); transition: width 0.3s; }
+    .nav-links a:hover { color: var(--white); }
+    .nav-links a:hover::after { width: 100%; }
+    .nav-cta { background: linear-gradient(135deg, var(--blue), var(--blue-mid)) !important; color: var(--white) !important; padding: 9px 22px; border-radius: 7px; font-weight: 600 !important; box-shadow: 0 4px 16px rgba(30,95,168,0.35); transition: transform 0.2s, box-shadow 0.3s !important; }
+    .nav-cta:hover { transform: translateY(-1px) !important; box-shadow: 0 8px 24px rgba(30,95,168,0.5) !important; }
+    .nav-cta::after { display: none !important; }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+    .hamburger span { display: block; width: 24px; height: 2px; background: var(--white); border-radius: 2px; transition: 0.3s; }
+    /* HERO */
+    #hero { min-height: 100vh; display: flex; align-items: center; padding: 120px 5% 80px; position: relative; overflow: hidden; }
+    .hero-bg { position: absolute; inset: 0; background: radial-gradient(ellipse 55% 55% at 72% 50%, rgba(26,58,107,0.28) 0%, transparent 70%), radial-gradient(ellipse 40% 50% at 20% 30%, rgba(29,184,196,0.07) 0%, transparent 60%); }
+    .hero-grid-lines { position: absolute; inset: 0; background-image: linear-gradient(rgba(58,159,214,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(58,159,214,0.04) 1px, transparent 1px); background-size: 60px 60px; }
+    .hero-chart-bg { position: absolute; bottom: 60px; right: 0; width: 55%; opacity: 0.05; }
+    .hero-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; max-width: 1200px; margin: 0 auto; width: 100%; position: relative; z-index: 1; }
+    .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(58,159,214,0.1); border: 1px solid rgba(58,159,214,0.3); padding: 6px 16px; border-radius: 100px; font-size: 0.77rem; color: var(--teal); font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 24px; animation: fadeUp 0.6s ease both; }
+    .hero-badge-dot { width: 7px; height: 7px; background: var(--teal); border-radius: 50%; animation: pulse 2s infinite; }
+    @keyframes pulse { 0%,100% { opacity:1; transform:scale(1); } 50% { opacity:0.5; transform:scale(0.8); } }
+    .hero-title { font-family: 'Playfair Display', serif; font-size: clamp(2.4rem, 4.5vw, 4rem); font-weight: 900; line-height: 1.12; margin-bottom: 20px; animation: fadeUp 0.7s 0.1s ease both; }
+    .hero-title em { font-style: normal; color: var(--teal); position: relative; }
+    .hero-title em::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, var(--teal), transparent); }
+    .hero-sub { color: var(--gray); font-size: 1.05rem; line-height: 1.75; max-width: 480px; margin-bottom: 40px; animation: fadeUp 0.7s 0.2s ease both; }
+    .hero-btns { display: flex; gap: 16px; flex-wrap: wrap; animation: fadeUp 0.7s 0.3s ease both; }
+    .btn-primary { background: linear-gradient(135deg, var(--blue), var(--blue-mid)); color: #fff; padding: 14px 32px; border-radius: 8px; font-weight: 600; font-size: 0.95rem; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: transform 0.2s, box-shadow 0.3s; box-shadow: 0 8px 32px rgba(30,95,168,0.4); }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(30,95,168,0.55); }
+    .btn-secondary { background: transparent; color: var(--white); padding: 14px 32px; border-radius: 8px; font-weight: 600; font-size: 0.95rem; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; border: 1px solid rgba(255,255,255,0.15); transition: border-color 0.3s, background 0.3s; }
+    .btn-secondary:hover { border-color: var(--teal); background: rgba(29,184,196,0.07); }
+    .hero-stats { display: flex; gap: 32px; margin-top: 52px; animation: fadeUp 0.7s 0.4s ease both; }
+    .hero-stat-num { font-family: 'Playfair Display', serif; font-size: 1.8rem; font-weight: 700; color: var(--white); line-height: 1; }
+    .hero-stat-num span { color: var(--teal); }
+    .hero-stat-label { font-size: 0.75rem; color: var(--gray); margin-top: 4px; text-transform: uppercase; letter-spacing: 0.06em; }
+    .hero-visual { position: relative; animation: fadeUp 0.8s 0.2s ease both; }
+    .hero-card-main { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 20px; padding: 28px; position: relative; overflow: hidden; }
+    .hero-card-main::before { content: ''; position: absolute; top: -1px; left: 30px; right: 30px; height: 2px; background: linear-gradient(90deg, transparent, var(--blue-mid), var(--teal), transparent); }
+    .card-header-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+    .card-title-sm { font-size: 0.78rem; color: var(--gray); text-transform: uppercase; letter-spacing: 0.08em; }
+    .card-live-badge { display: flex; align-items: center; gap: 5px; font-size: 0.72rem; color: var(--teal); background: rgba(29,184,196,0.1); padding: 3px 10px; border-radius: 20px; font-weight: 600; }
+    .live-dot { width: 6px; height: 6px; background: var(--teal); border-radius: 50%; animation: pulse 1.5s infinite; }
+    .chart-svg { width: 100%; height: 140px; }
+    .chart-labels { display: flex; justify-content: space-between; margin-top: 8px; }
+    .chart-label { font-size: 0.7rem; color: var(--gray); }
+    .float-card { position: absolute; background: rgba(11,18,32,0.95); border: 1px solid rgba(58,159,214,0.22); border-radius: 12px; padding: 14px 18px; backdrop-filter: blur(10px); }
+    .float-card-1 { top: -24px; right: -24px; animation: float1 4s ease-in-out infinite; }
+    .float-card-2 { bottom: -20px; left: -20px; animation: float2 4s 2s ease-in-out infinite; }
+    @keyframes float1 { 0%,100%{transform:translateY(0);} 50%{transform:translateY(-10px);} }
+    @keyframes float2 { 0%,100%{transform:translateY(0);} 50%{transform:translateY(8px);} }
+    .float-label { font-size: 0.7rem; color: var(--gray); margin-bottom: 4px; }
+    .float-value { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; color: var(--white); }
+    .float-change { font-size: 0.72rem; color: var(--teal); font-weight: 600; margin-top: 2px; }
+    .ticker-row { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-top: 1px solid rgba(255,255,255,0.05); }
+    .ticker-name { font-size: 0.82rem; font-weight: 600; color: var(--white); }
+    .ticker-price { font-size: 0.8rem; color: var(--gray); }
+    .ticker-change { font-size: 0.78rem; font-weight: 600; padding: 3px 8px; border-radius: 4px; }
+    .ticker-change.up { background: rgba(29,184,196,0.12); color: var(--teal); }
+    .ticker-change.dn { background: rgba(231,76,60,0.12); color: #e74c3c; }
+    /* TICKER BAND */
+    .ticker-band { background: var(--card-bg); border-top: 1px solid rgba(58,159,214,0.12); border-bottom: 1px solid rgba(58,159,214,0.12); padding: 14px 0; overflow: hidden; }
+    .ticker-track { display: flex; gap: 60px; animation: tickerMove 28s linear infinite; white-space: nowrap; width: max-content; }
+    @keyframes tickerMove { 0%{transform:translateX(0);} 100%{transform:translateX(-50%);} }
+    .ticker-item { display: flex; align-items: center; gap: 10px; font-size: 0.82rem; font-weight: 500; }
+    .ticker-sym { color: var(--white); font-weight: 700; }
+    .ticker-val { color: var(--gray); }
+    .ticker-up { color: var(--teal); font-weight: 600; }
+    .ticker-dn { color: #e74c3c; font-weight: 600; }
+    .ticker-divider { color: rgba(255,255,255,0.12); }
+    /* SECTION */
+    section { padding: 100px 5%; }
+    .section-label { display: inline-flex; align-items: center; gap: 8px; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--teal); font-weight: 600; margin-bottom: 14px; }
+    .section-label::before { content: ''; width: 24px; height: 1px; background: var(--teal); }
+    .section-title { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 3.5vw, 2.8rem); font-weight: 800; line-height: 1.2; color: var(--white); margin-bottom: 16px; }
+    .section-title em { font-style: normal; color: var(--teal); }
+    .section-sub { color: var(--gray); font-size: 1rem; line-height: 1.75; max-width: 540px; }
+    .container { max-width: 1200px; margin: 0 auto; }
+    /* ABOUT */
+    #about { background: var(--dark); }
+    .about-inner { display: grid; grid-template-columns: 1fr 1.1fr; gap: 80px; align-items: center; }
+    .about-visual-wrap { position: relative; }
+    .about-avatar-box { width: 100%; aspect-ratio: 0.85; background: linear-gradient(145deg, var(--card-bg), #0a1628); border-radius: 20px; border: 1px solid var(--card-border); display: flex; flex-direction: column; align-items: center; justify-content: flex-end; overflow: hidden; position: relative; }
+    .avatar-initials-large { font-family: 'Playfair Display', serif; font-size: clamp(5rem,12vw,10rem); font-weight: 900; color: rgba(58,159,214,0.07); position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); line-height: 1; user-select: none; }
+    .person-svg-wrap { width: 100%; text-align: center; }
+    .about-glow { position: absolute; bottom: -40px; left: 50%; transform: translateX(-50%); width: 200px; height: 200px; background: radial-gradient(circle, rgba(30,95,168,0.28), transparent 70%); pointer-events: none; }
+    .about-tag { position: absolute; background: var(--card-bg); border: 1px solid rgba(58,159,214,0.2); border-radius: 10px; padding: 12px 16px; }
+    .about-tag-1 { top: 20px; right: -20px; }
+    .about-tag-2 { bottom: 30px; left: -20px; }
+    .about-tag-icon { font-size: 1.3rem; margin-bottom: 4px; }
+    .about-tag-label { font-size: 0.7rem; color: var(--gray); }
+    .about-tag-val { font-size: 0.85rem; font-weight: 700; color: var(--white); }
+    .about-text .section-sub { max-width: 100%; margin-bottom: 32px; }
+    .about-pillars { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 36px; }
+    .pillar-item { display: flex; align-items: flex-start; gap: 10px; background: rgba(58,159,214,0.05); border: 1px solid rgba(58,159,214,0.1); border-radius: 10px; padding: 14px; }
+    .pillar-icon { width: 32px; height: 32px; background: rgba(58,159,214,0.12); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--teal); font-size: 0.85rem; flex-shrink: 0; }
+    .pillar-text { font-size: 0.82rem; color: var(--gray); line-height: 1.5; }
+    .pillar-text strong { color: var(--white); display: block; margin-bottom: 2px; font-size: 0.85rem; }
+    .edu-badge { display: inline-flex; align-items: center; gap: 10px; background: rgba(201,145,42,0.08); border: 1px solid rgba(201,145,42,0.22); border-radius: 10px; padding: 12px 18px; }
+    .edu-icon { color: var(--gold); font-size: 1.1rem; }
+    .edu-text { font-size: 0.82rem; color: var(--gray); }
+    .edu-text strong { color: var(--white); display: block; font-size: 0.9rem; }
+    /* SERVICES */
+    #services { background: var(--darker); }
+    .services-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 60px; flex-wrap: wrap; gap: 20px; }
+    .services-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+    .service-card { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 16px; padding: 32px 28px; transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s; position: relative; overflow: hidden; cursor: default; }
+    .service-card::before { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(30,95,168,0.08), transparent); opacity: 0; transition: opacity 0.3s; }
+    .service-card:hover { transform: translateY(-6px); border-color: rgba(58,159,214,0.4); box-shadow: 0 20px 60px rgba(30,95,168,0.18); }
+    .service-card:hover::before { opacity: 1; }
+    .service-card.featured { background: linear-gradient(145deg, #0a1830, #0c1e38); border-color: rgba(58,159,214,0.35); }
+    .service-num { font-size: 0.7rem; color: rgba(255,255,255,0.18); font-weight: 700; letter-spacing: 0.1em; margin-bottom: 20px; }
+    .service-icon-wrap { width: 52px; height: 52px; background: rgba(30,95,168,0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; margin-bottom: 22px; color: var(--teal); transition: background 0.3s; }
+    .service-card:hover .service-icon-wrap { background: rgba(30,95,168,0.28); }
+    .service-name { font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 700; color: var(--white); margin-bottom: 12px; }
+    .service-desc { font-size: 0.85rem; color: var(--gray); line-height: 1.7; }
+    .service-arrow { margin-top: 24px; color: var(--teal); font-size: 0.82rem; font-weight: 600; display: flex; align-items: center; gap: 6px; opacity: 0; transform: translateX(-8px); transition: opacity 0.3s, transform 0.3s; }
+    .service-card:hover .service-arrow { opacity: 1; transform: translateX(0); }
+    /* WHY */
+    #why { background: var(--dark); }
+    .why-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+    .why-list { display: flex; flex-direction: column; gap: 20px; }
+    .why-item { display: flex; gap: 18px; align-items: flex-start; padding: 20px; background: rgba(58,159,214,0.04); border: 1px solid rgba(58,159,214,0.08); border-radius: 12px; transition: border-color 0.3s, background 0.3s; }
+    .why-item:hover { border-color: rgba(58,159,214,0.22); background: rgba(58,159,214,0.08); }
+    .why-icon { width: 44px; height: 44px; border-radius: 10px; background: linear-gradient(135deg, var(--blue), var(--blue-mid)); display: flex; align-items: center; justify-content: center; font-size: 1.1rem; color: #fff; flex-shrink: 0; }
+    .why-text h4 { font-size: 0.95rem; font-weight: 700; color: var(--white); margin-bottom: 6px; }
+    .why-text p { font-size: 0.83rem; color: var(--gray); line-height: 1.6; }
+    .why-visual { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .why-stat-card { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 16px; padding: 28px 22px; text-align: center; transition: transform 0.3s; }
+    .why-stat-card:hover { transform: translateY(-4px); }
+    .why-stat-card.span2 { grid-column: 1 / -1; }
+    .why-stat-num { font-family: 'Playfair Display', serif; font-size: 2.4rem; font-weight: 900; color: var(--white); line-height: 1; }
+    .why-stat-num span { color: var(--teal); }
+    .why-stat-label { font-size: 0.78rem; color: var(--gray); margin-top: 8px; text-transform: uppercase; letter-spacing: 0.06em; }
+    .why-progress { width: 100%; height: 4px; background: rgba(255,255,255,0.06); border-radius: 2px; margin-top: 14px; }
+    .why-progress-fill { height: 100%; background: linear-gradient(90deg, var(--blue-mid), var(--teal)); border-radius: 2px; }
+    /* TEACH */
+    #teach { background: var(--darker); }
+    .teach-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 20px; margin-top: 60px; }
+    .teach-card { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 14px; padding: 28px 22px; text-align: center; transition: transform 0.3s, border-color 0.3s; }
+    .teach-card:hover { transform: translateY(-5px); border-color: rgba(58,159,214,0.35); }
+    .teach-icon { font-size: 1.8rem; margin-bottom: 16px; }
+    .teach-title { font-size: 0.9rem; font-weight: 700; color: var(--white); margin-bottom: 10px; }
+    .teach-desc { font-size: 0.78rem; color: var(--gray); line-height: 1.6; }
+    /* TEAM */
+    #team { background: var(--dark); }
+    .team-intro { text-align: center; margin-bottom: 60px; }
+    .team-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 24px; }
+    .team-card { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 16px; padding: 32px 20px; text-align: center; transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s; position: relative; overflow: hidden; }
+    .team-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--blue), var(--teal)); opacity: 0; transition: opacity 0.3s; }
+    .team-card:hover { transform: translateY(-6px); border-color: rgba(58,159,214,0.35); box-shadow: 0 16px 48px rgba(30,95,168,0.18); }
+    .team-card:hover::before { opacity: 1; }
+    .team-card.leader { background: linear-gradient(145deg, #0a1830, #0c1e38); border-color: rgba(58,159,214,0.3); grid-column: span 2; display: flex; gap: 28px; align-items: center; text-align: left; padding: 32px 36px; }
+    .team-card.leader::before { opacity: 1; }
+    .team-avatar { width: 72px; height: 72px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 800; color: #fff; flex-shrink: 0; margin: 0 auto 16px; border: 2px solid rgba(58,159,214,0.25); }
+    .team-card.leader .team-avatar { width: 88px; height: 88px; font-size: 1.8rem; margin: 0; border-color: rgba(58,159,214,0.45); }
+    .team-leader-badge { display: inline-flex; align-items: center; gap: 5px; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gold); background: rgba(201,145,42,0.1); border: 1px solid rgba(201,145,42,0.25); padding: 3px 10px; border-radius: 20px; font-weight: 700; margin-bottom: 8px; }
+    .team-name { font-size: 1rem; font-weight: 700; color: var(--white); margin-bottom: 5px; }
+    .team-role { font-size: 0.78rem; color: var(--teal); font-weight: 600; margin-bottom: 10px; }
+    .team-desc { font-size: 0.78rem; color: var(--gray); line-height: 1.6; }
+    .team-socials { display: flex; gap: 8px; justify-content: center; margin-top: 16px; }
+    .team-card.leader .team-socials { justify-content: flex-start; }
+    .team-social-btn { width: 32px; height: 32px; border-radius: 8px; background: rgba(58,159,214,0.08); border: 1px solid rgba(58,159,214,0.15); display: flex; align-items: center; justify-content: center; color: var(--gray); font-size: 0.78rem; text-decoration: none; transition: background 0.3s, color 0.3s; }
+    .team-social-btn:hover { background: rgba(58,159,214,0.2); color: var(--teal); }
+    .team-card.leader .team-info { flex: 1; }
+    /* TESTIMONIALS */
+    #testimonials { background: var(--darker); }
+    .testimonials-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; margin-top: 60px; }
+    .testi-card { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 16px; padding: 28px; transition: transform 0.3s; }
+    .testi-card:hover { transform: translateY(-4px); }
+    .testi-quote-icon { color: var(--teal); font-size: 1.4rem; margin-bottom: 12px; }
+    .testi-stars { color: var(--gold); font-size: 0.85rem; margin-bottom: 14px; letter-spacing: 2px; }
+    .testi-text { font-size: 0.88rem; color: var(--gray); line-height: 1.75; margin-bottom: 20px; font-style: italic; }
+    .testi-author { display: flex; align-items: center; gap: 12px; }
+    .testi-avatar { width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.9rem; flex-shrink: 0; }
+    .testi-name { font-size: 0.88rem; font-weight: 700; color: var(--white); }
+    .testi-loc { font-size: 0.74rem; color: var(--gray); margin-top: 2px; }
+    /* CONTACT */
+    #contact { background: var(--dark); }
+    .contact-inner { display: grid; grid-template-columns: 1fr 1.2fr; gap: 80px; align-items: start; }
+    .contact-info-title { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; margin-bottom: 12px; }
+    .contact-info-sub { color: var(--gray); font-size: 0.9rem; line-height: 1.7; margin-bottom: 36px; }
+    .contact-detail { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; }
+    .contact-detail-icon { width: 42px; height: 42px; background: rgba(30,95,168,0.15); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: var(--teal); font-size: 1rem; flex-shrink: 0; }
+    .contact-detail-val { font-size: 0.88rem; color: var(--white); font-weight: 500; }
+    .contact-detail-label { font-size: 0.72rem; color: var(--gray); margin-bottom: 2px; }
+    .contact-form { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 20px; padding: 36px; }
+    .form-title { font-size: 1.1rem; font-weight: 700; color: var(--white); margin-bottom: 28px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .form-group { margin-bottom: 18px; }
+    .form-group label { display: block; font-size: 0.78rem; color: var(--gray); margin-bottom: 8px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; }
+    .form-group input, .form-group select, .form-group textarea { width: 100%; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 12px 16px; color: var(--white); font-family: 'DM Sans', sans-serif; font-size: 0.88rem; outline: none; transition: border-color 0.3s; resize: none; }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--blue-mid); background: rgba(30,95,168,0.07); }
+    .form-group select option { background: #0b1220; }
+    .form-submit { width: 100%; background: linear-gradient(135deg, var(--blue), var(--blue-mid)); color: #fff; border: none; padding: 14px; border-radius: 8px; font-family: 'DM Sans', sans-serif; font-size: 0.95rem; font-weight: 600; cursor: pointer; transition: transform 0.2s, box-shadow 0.3s; box-shadow: 0 8px 24px rgba(30,95,168,0.35); display: flex; align-items: center; justify-content: center; gap: 8px; }
+    .form-submit:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(30,95,168,0.5); }
+    .form-success { display: none; text-align: center; padding: 20px; color: var(--teal); font-weight: 600; }
+    /* CTA */
+    .cta-banner { margin: 0 5% 80px; background: linear-gradient(135deg, #081428, #0c1e38); border: 1px solid rgba(58,159,214,0.25); border-radius: 24px; padding: 60px; text-align: center; position: relative; overflow: hidden; }
+    .cta-banner::before { content: ''; position: absolute; top: -80px; left: 50%; transform: translateX(-50%); width: 400px; height: 400px; background: radial-gradient(circle, rgba(30,95,168,0.18), transparent 70%); pointer-events: none; }
+    .cta-banner h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem,3vw,2.6rem); font-weight: 800; margin-bottom: 14px; }
+    .cta-banner p { color: var(--gray); font-size: 1rem; margin-bottom: 32px; }
+    .cta-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+    /* FOOTER */
+    footer { background: var(--darker); border-top: 1px solid rgba(58,159,214,0.1); padding: 40px 5%; }
+    .footer-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+    .footer-copy { font-size: 0.8rem; color: var(--gray); }
+    .footer-copy span { color: var(--teal); }
+    .footer-links { display: flex; gap: 24px; }
+    .footer-links a { font-size: 0.8rem; color: var(--gray); text-decoration: none; transition: color 0.3s; }
+    .footer-links a:hover { color: var(--teal); }
+    /* ANIMATIONS */
+    @keyframes fadeUp { from{opacity:0;transform:translateY(24px);} to{opacity:1;transform:translateY(0);} }
+    .reveal { opacity: 0; transform: translateY(32px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    /* RESPONSIVE */
+    @media(max-width:1100px){ .team-grid{grid-template-columns:repeat(3,1fr);} .team-card.leader{grid-column:span 3;} }
+    @media(max-width:900px){
+      .nav-links{display:none;flex-direction:column;gap:0;}
+      .nav-links.open{display:flex;position:absolute;top:100%;left:0;right:0;background:rgba(4,8,15,0.97);border-top:1px solid rgba(58,159,214,0.1);padding:20px 5%;backdrop-filter:blur(16px);}
+      .nav-links a{padding:12px 0;display:block;}
+      .hamburger{display:flex;}
+      .hero-inner{grid-template-columns:1fr;}
+      .hero-visual{order:-1;}
+      .about-inner,.why-inner,.contact-inner{grid-template-columns:1fr;gap:40px;}
+      .services-grid{grid-template-columns:1fr;}
+      .teach-grid{grid-template-columns:1fr 1fr;}
+      .testimonials-grid{grid-template-columns:1fr;}
+      .team-grid{grid-template-columns:1fr 1fr;}
+      .team-card.leader{grid-column:span 2;flex-direction:column;text-align:center;}
+      .team-card.leader .team-socials{justify-content:center;}
+      .cta-banner{padding:40px 24px;}
+      .form-row{grid-template-columns:1fr;}
+    }
+    @media(max-width:600px){
+      section{padding:70px 5%;}
+      .teach-grid,.team-grid{grid-template-columns:1fr;}
+      .team-card.leader{grid-column:span 1;}
+      .about-pillars{grid-template-columns:1fr;}
+      .why-visual{grid-template-columns:1fr;}
+      .why-stat-card.span2{grid-column:auto;}
+    }
+  </style>
+</head>
+<body>
+
+<!-- Skip to main content (Accessibility) -->
+<a href="#main-content" style="position:absolute;top:-50px;left:16px;background:var(--teal);color:#000;padding:10px 18px;border-radius:6px;font-weight:700;z-index:10000;transition:top .2s;" onfocus="this.style.top='16px'" onblur="this.style.top='-50px'">Skip to main content</a>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#hero" class="logo">
+    <div class="logo-icon" style="background: transparent; border: none;">
+      <img src="companylogo.jpeg" alt="Farooq Infrastructures Logo" style="width: 100%; height: 100%; object-fit: contain; border-radius: 9px;" />
+    </div>
+    <span>Farooq</span>&nbsp;Advisors
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about"><i class="fas fa-user" style="font-size:.75rem;margin-right:5px;opacity:.7;"></i>About</a></li>
+    <li><a href="#services"><i class="fas fa-briefcase" style="font-size:.75rem;margin-right:5px;opacity:.7;"></i>Services</a></li>
+    <li><a href="#teach"><i class="fas fa-graduation-cap" style="font-size:.75rem;margin-right:5px;opacity:.7;"></i>Learn</a></li>
+    <li><a href="#team"><i class="fas fa-users" style="font-size:.75rem;margin-right:5px;opacity:.7;"></i>Team</a></li>
+    <li><a href="#testimonials"><i class="fas fa-star" style="font-size:.75rem;margin-right:5px;opacity:.7;"></i>Reviews</a></li>
+    <li><a href="#contact" class="nav-cta"><i class="fas fa-paper-plane" style="font-size:.75rem;margin-right:5px;"></i>Contact Me</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger" onclick="toggleNav()" aria-label="Open navigation menu" role="button" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+</nav>
+
+<main id="main-content">
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid-lines"></div>
+  <svg class="hero-chart-bg" viewBox="0 0 800 200" fill="none">
+    <polyline points="0,160 80,140 160,120 240,130 320,80 400,90 480,50 560,70 640,30 720,45 800,20" stroke="#3a9fd6" stroke-width="2" fill="none"/>
+    <polyline points="0,180 80,170 160,150 240,160 320,130 400,140 480,100 560,110 640,70 720,80 800,50" stroke="#1db8c4" stroke-width="1.5" fill="none" opacity="0.5"/>
+  </svg>
+  <div class="hero-inner">
+    <div>
+      <div class="hero-badge">
+        <div class="hero-badge-dot"></div>
+        <i class="fas fa-chart-line" style="margin-right:4px;"></i>
+        Stock Market Advisor &amp; Educator
+      </div>
+      <h1 class="hero-title">Master the Market.<br>Build Your <em>Wealth</em><br>with Confidence.</h1>
+      <p class="hero-sub">I'm <strong style="color:var(--white)">Umar Farooq Shaik</strong> — a passionate Stock Market Advisor from Andhra Pradesh, helping you understand how to read, analyse, and profit from the stock market. No jargon. Real strategies.</p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn-primary"><i class="fas fa-rocket"></i> Get Free Consultation</a>
+        <a href="#services" class="btn-secondary"><i class="fas fa-play-circle"></i> Explore Services</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-num">100<span>+</span></div>
+          <div class="hero-stat-label"><i class="fas fa-user-graduate" style="margin-right:3px;"></i>Students Taught</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">5<span>★</span></div>
+          <div class="hero-stat-label"><i class="fas fa-star" style="margin-right:3px;"></i>Client Rating</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">0<span>₹</span></div>
+          <div class="hero-stat-label"><i class="fas fa-gift" style="margin-right:3px;"></i>Hidden Fees</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card-main">
+        <div class="card-header-row">
+          <span class="card-title-sm"><i class="fas fa-chart-area" style="margin-right:6px;color:var(--teal);"></i>Market Overview</span>
+          <span class="card-live-badge"><span class="live-dot"></span>LIVE</span>
+        </div>
+        <svg class="chart-svg" viewBox="0 0 380 140">
+          <defs>
+            <linearGradient id="cg" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#1e5fa8" stop-opacity="0.35"/>
+              <stop offset="100%" stop-color="#1db8c4" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <line x1="0" y1="35" x2="380" y2="35" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+          <line x1="0" y1="70" x2="380" y2="70" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+          <line x1="0" y1="105" x2="380" y2="105" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+          <path d="M0,110 L40,95 L80,85 L120,88 L160,60 L200,55 L240,30 L280,40 L320,18 L360,25 L380,20 L380,140 L0,140 Z" fill="url(#cg)"/>
+          <polyline points="0,110 40,95 80,85 120,88 160,60 200,55 240,30 280,40 320,18 360,25 380,20" fill="none" stroke="#3a9fd6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="380" cy="20" r="4" fill="#1db8c4"/>
+          <circle cx="380" cy="20" r="8" fill="rgba(29,184,196,0.2)"/>
+        </svg>
+        <div class="chart-labels">
+          <span class="chart-label">Jan</span><span class="chart-label">Mar</span><span class="chart-label">May</span><span class="chart-label">Jul</span><span class="chart-label">Sep</span><span class="chart-label">Nov</span>
+        </div>
+        <div class="ticker-row">
+          <span class="ticker-name"><i class="fas fa-arrow-trend-up" style="color:var(--teal);margin-right:5px;font-size:.75rem;"></i>NIFTY 50</span>
+          <span class="ticker-price">₹24,520</span>
+          <span class="ticker-change up">▲ 1.24%</span>
+        </div>
+        <div class="ticker-row">
+          <span class="ticker-name"><i class="fas fa-arrow-trend-up" style="color:var(--teal);margin-right:5px;font-size:.75rem;"></i>SENSEX</span>
+          <span class="ticker-price">₹80,940</span>
+          <span class="ticker-change up">▲ 0.98%</span>
+        </div>
+        <div class="ticker-row">
+          <span class="ticker-name"><i class="fas fa-arrow-trend-down" style="color:#e74c3c;margin-right:5px;font-size:.75rem;"></i>BANKNIFTY</span>
+          <span class="ticker-price">₹52,140</span>
+          <span class="ticker-change dn">▼ 0.31%</span>
+        </div>
+      </div>
+      <div class="float-card float-card-1">
+        <div class="float-label"><i class="fas fa-wallet" style="color:var(--teal);margin-right:4px;"></i>Portfolio Return</div>
+        <div class="float-value">+34.6%</div>
+        <div class="float-change"><i class="fas fa-arrow-up" style="margin-right:3px;"></i>YTD Growth</div>
+      </div>
+      <div class="float-card float-card-2">
+        <div class="float-label"><i class="fas fa-shield-alt" style="color:var(--teal);margin-right:4px;"></i>Risk Score</div>
+        <div class="float-value">LOW</div>
+        <div class="float-change"><i class="fas fa-check-circle" style="margin-right:3px;"></i>Managed</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER BAND -->
+<div class="ticker-band">
+  <div class="ticker-track">
+    <div class="ticker-item"><span class="ticker-sym">NIFTY</span><span class="ticker-val">24,520</span><span class="ticker-up">▲ +1.24%</span></div>
+    <span class="ticker-divider">|</span>
+    <div class="ticker-item"><span class="ticker-sym">SENSEX</span><span class="ticker-val">80,940</span><span class="ticker-up">▲ +0.98%</span></div>
+    <span class="ticker-divider">|</span>
+    <div class="ticker-item"><span class="ticker-sym">RELIANCE</span><span class="ticker-val">₹2,870</span><span class="ticker-up">▲ +2.1%</span></div>
+    <span class="ticker-divider">|</span>
+    <div class="ticker-item"><span class="ticker-sym">TCS</span><span class="ticker-val">₹3,940</span><span class="ticker-dn">▼ -0.5%</span></div>
+    <span class="ticker-divider">|</span>
+    <div class="ticker-item"><span class="ticker-sym">HDFC BANK</span><span class="ticker-val">₹1,680</span><span class="ticker-up">▲ +1.3%</span></div>
+    <span class="ticker-divider">|</span>
+    <div class="ticker-item"><span class="ticker-sym">INFOSYS</span><span class="ticker-val">₹1,520</span><span class="ticker-up">▲ +0.8%</span></div>
+    <span class="ticker-divider">|</span>
+    <div class="ticker-item"><span class="ticker-sym">BANKNIFTY</span><span class="ticker-val">52,140</span><span class="ticker-dn">▼ -0.3%</span></div>
+    <span class="ticker-divider">|</span>
+    <div class="ticker-item"><span class="ticker-sym">WIPRO</span><span class="ticker-val">₹460</span><span class="ticker-up">▲ +1.5%</span></div>
+    <span class="ticker-divider">|</span>
+    <div class="ticker-item"><span class="ticker-sym">NIFTY</span><span class="ticker-val">24,520</span><span class="ticker-up">▲ +1.24%</span></div>
+    <span class="ticker-divider">|</span>
+    <div class="ticker-item"><span class="ticker-sym">SENSEX</span><span class="ticker-val">80,940</span><span class="ticker-up">▲ +0.98%</span></div>
+    <span class="ticker-divider">|</span>
+    <div class="ticker-item"><span class="ticker-sym">RELIANCE</span><span class="ticker-val">₹2,870</span><span class="ticker-up">▲ +2.1%</span></div>
+    <span class="ticker-divider">|</span>
+    <div class="ticker-item"><span class="ticker-sym">TCS</span><span class="ticker-val">₹3,940</span><span class="ticker-dn">▼ -0.5%</span></div>
+    <span class="ticker-divider">|</span>
+    <div class="ticker-item"><span class="ticker-sym">HDFC BANK</span><span class="ticker-val">₹1,680</span><span class="ticker-up">▲ +1.3%</span></div>
+    <span class="ticker-divider">|</span>
+    <div class="ticker-item"><span class="ticker-sym">INFOSYS</span><span class="ticker-val">₹1,520</span><span class="ticker-up">▲ +0.8%</span></div>
+    <span class="ticker-divider">|</span>
+    <div class="ticker-item"><span class="ticker-sym">BANKNIFTY</span><span class="ticker-val">52,140</span><span class="ticker-dn">▼ -0.3%</span></div>
+    <span class="ticker-divider">|</span>
+    <div class="ticker-item"><span class="ticker-sym">WIPRO</span><span class="ticker-val">₹460</span><span class="ticker-up">▲ +1.5%</span></div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-inner" style="grid-template-columns: 1fr; max-width: 900px; margin: 0 auto; text-align: center;">
+      <div class="about-text reveal">
+        <div class="section-label" style="justify-content: center;"><i class="fas fa-user-tie"></i> About Me</div>
+        <h2 class="section-title">Turning Market <em>Complexity</em> into Clarity</h2>
+        <p class="section-sub" style="margin: 0 auto 20px;">
+          I'm <strong style="color:var(--white)">Umar Farooq Shaik</strong>, a dedicated Stock Market Advisor and Educator based in Palnadu District, Andhra Pradesh. My mission is simple — to make the stock market accessible, understandable, and profitable for everyone, regardless of their background.
+        </p>
+        <p class="section-sub" style="margin: 0 auto 36px;">I believe anyone can learn to read the market, understand chart patterns, and make informed investment decisions. I combine fundamental analysis with technical tools to guide my clients and students toward smarter financial decisions.</p>
+        <div class="about-pillars" style="text-align: left; grid-template-columns: repeat(2, 1fr);">
+          <div class="pillar-item">
+            <div class="pillar-icon"><i class="fas fa-chart-line"></i></div>
+            <div class="pillar-text"><strong>Technical Analysis</strong>Charts, candlestick patterns &amp; indicators</div>
+          </div>
+          <div class="pillar-item">
+            <div class="pillar-icon"><i class="fas fa-brain"></i></div>
+            <div class="pillar-text"><strong>Market Psychology</strong>Trader behavior &amp; sentiment</div>
+          </div>
+          <div class="pillar-item">
+            <div class="pillar-icon"><i class="fas fa-shield-alt"></i></div>
+            <div class="pillar-text"><strong>Risk Management</strong>Protecting capital, maximizing returns</div>
+          </div>
+          <div class="pillar-item">
+            <div class="pillar-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div class="pillar-text"><strong>Stock Education</strong>Fundamentals for absolute beginners</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT COMPANY -->
+<style>
+  .company-section-inner {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 80px;
+    align-items: center;
+  }
+  .company-logo-wrap {
+    order: 1;
+    background: var(--card-bg);
+    border: 1px solid rgba(58,159,214,0.22);
+    border-radius: 24px;
+    padding: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 40px rgba(30,95,168,0.18);
+  }
+  .company-logo-wrap::before {
+    content: '';
+    position: absolute;
+    top: -1px; left: 30px; right: 30px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--blue-mid), var(--teal), transparent);
+  }
+  .company-logo-wrap img {
+    width: 100%;
+    max-width: 280px;
+    border-radius: 14px;
+    display: block;
+  }
+  .company-text-wrap { order: 2; }
+  @media(max-width: 900px) {
+    .company-section-inner {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+    .company-text-wrap { order: 1; }
+    .company-logo-wrap {
+      order: 2;
+      padding: 28px;
+    }
+    .company-logo-wrap img { max-width: 220px; }
+  }
+</style>
+<section id="about-company" style="background: var(--darker);">
+  <div class="container">
+    <div class="company-section-inner">
+      <div class="company-logo-wrap reveal">
+        <img src="companylogo.jpeg" alt="Farooq Infrastructures Company Logo" loading="lazy" />
+      </div>
+      <div class="company-text-wrap about-text reveal">
+        <div class="section-label"><i class="fas fa-building"></i> About Company</div>
+        <h2 class="section-title">Farooq <em>Infrastructures</em></h2>
+        <p class="section-sub" style="margin-bottom:20px;">
+          <strong>Farooq Infrastructures Pvt Ltd</strong> is a registered entity dedicated to providing superior market guidance and infrastructure services. We stand by our commitment to transparency, growth, and long-term value creation.
+        </p>
+        <div class="about-pillars" style="grid-template-columns: 1fr;">
+          <div class="pillar-item" style="padding: 10px 14px;">
+            <div class="pillar-icon"><i class="fas fa-envelope"></i></div>
+            <div class="pillar-text"><strong>Email</strong>farooqinfrastructures9@gmail.com</div>
+          </div>
+          <div class="pillar-item" style="padding: 10px 14px;">
+            <div class="pillar-icon"><i class="fab fa-instagram"></i></div>
+            <div class="pillar-text"><strong>Instagram</strong><a href="https://www.instagram.com/farooq.infrastructures/" target="_blank" style="color:var(--teal);text-decoration:none;">@farooq.infrastructures</a></div>
+          </div>
+          <div class="pillar-item" style="padding: 10px 14px;">
+            <div class="pillar-icon"><i class="fas fa-file-contract"></i></div>
+            <div class="pillar-text"><strong>Registration Details</strong>SELLING Market registered under REO Vijayawada.<br>CIN No: 98081607hk96</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+    <div class="services-header reveal">
+      <div>
+        <div class="section-label"><i class="fas fa-briefcase"></i> What I Offer</div>
+        <h2 class="section-title">Services Designed<br>for <em>Your Growth</em></h2>
+      </div>
+      <p class="section-sub">From one-on-one consultations to complete market education — I've got you covered.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card featured reveal">
+        <div class="service-num">01</div>
+        <div class="service-icon-wrap"><i class="fas fa-user-tie"></i></div>
+        <div class="service-name">1-on-1 Stock Consultation</div>
+        <div class="service-desc">Personalised advice tailored to your financial goals, risk appetite, and investment horizon. I analyse your portfolio and suggest actionable strategies.</div>
+        <div class="service-arrow">Book Session <i class="fas fa-arrow-right"></i></div>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-num">02</div>
+        <div class="service-icon-wrap"><i class="fas fa-chalkboard-teacher"></i></div>
+        <div class="service-name">Stock Market Education</div>
+        <div class="service-desc">Learn how to read the market from scratch — candlestick patterns, support &amp; resistance, indices, sectors, and more. For complete beginners.</div>
+        <div class="service-arrow">Learn More <i class="fas fa-arrow-right"></i></div>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-num">03</div>
+        <div class="service-icon-wrap"><i class="fas fa-chart-bar"></i></div>
+        <div class="service-name">Technical Analysis Coaching</div>
+        <div class="service-desc">Master chart reading, indicators (RSI, MACD, Bollinger Bands), and chart patterns to identify high-probability trade setups on your own.</div>
+        <div class="service-arrow">Explore <i class="fas fa-arrow-right"></i></div>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-num">04</div>
+        <div class="service-icon-wrap"><i class="fas fa-shield-alt"></i></div>
+        <div class="service-name">Risk Management Planning</div>
+        <div class="service-desc">Learn to protect your capital with stop-losses, position sizing, and portfolio diversification. Avoid the costly mistakes beginners make.</div>
+        <div class="service-arrow">Get Started <i class="fas fa-arrow-right"></i></div>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-num">05</div>
+        <div class="service-icon-wrap"><i class="fas fa-search-dollar"></i></div>
+        <div class="service-name">Fundamental Analysis</div>
+        <div class="service-desc">Understand P/E ratios, EPS, revenue growth, and how to pick fundamentally strong stocks for long-term wealth creation.</div>
+        <div class="service-arrow">Discover <i class="fas fa-arrow-right"></i></div>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-num">06</div>
+        <div class="service-icon-wrap"><i class="fab fa-instagram"></i></div>
+        <div class="service-name">Free Market Insights</div>
+        <div class="service-desc">Follow me on Instagram for daily market tips, stock watchlists, and education content — completely free for everyone.</div>
+        <div class="service-arrow">Follow Now <i class="fas fa-arrow-right"></i></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT I TEACH -->
+<section id="teach">
+  <div class="container">
+    <div class="reveal" style="text-align:center;">
+      <div class="section-label" style="justify-content:center;"><i class="fas fa-book-open"></i> Curriculum</div>
+      <h2 class="section-title" style="text-align:center;">What You'll <em>Learn</em> With Me</h2>
+      <p class="section-sub" style="text-align:center;margin:0 auto;">From zero knowledge to confident trader — here's my structured learning path.</p>
+    </div>
+    <div class="teach-grid">
+      <div class="teach-card reveal">
+        <div class="teach-icon"><i class="fas fa-university" style="color:var(--teal);"></i></div>
+        <div class="teach-title">How Markets Work</div>
+        <div class="teach-desc">BSE, NSE, Sensex, Nifty, market hours, order types, and how stocks are bought and sold.</div>
+      </div>
+      <div class="teach-card reveal">
+        <div class="teach-icon"><i class="fas fa-fire" style="color:var(--gold);"></i></div>
+        <div class="teach-title">Candlestick Patterns</div>
+        <div class="teach-desc">Doji, Hammer, Engulfing, Morning Star and 20+ patterns to predict price movements.</div>
+      </div>
+      <div class="teach-card reveal">
+        <div class="teach-icon"><i class="fas fa-chart-line" style="color:var(--teal);"></i></div>
+        <div class="teach-title">Chart Reading</div>
+        <div class="teach-desc">Support, resistance, trendlines, breakouts, and volume analysis for best entry/exit points.</div>
+      </div>
+      <div class="teach-card reveal">
+        <div class="teach-icon"><i class="fas fa-microscope" style="color:#9b59b6;"></i></div>
+        <div class="teach-title">Technical Indicators</div>
+        <div class="teach-desc">RSI, MACD, Moving Averages, Bollinger Bands — how to use them to confirm trade setups.</div>
+      </div>
+      <div class="teach-card reveal">
+        <div class="teach-icon"><i class="fas fa-building" style="color:var(--gold);"></i></div>
+        <div class="teach-title">Fundamental Analysis</div>
+        <div class="teach-desc">Evaluate company health, read balance sheets, and choose long-term winners.</div>
+      </div>
+      <div class="teach-card reveal">
+        <div class="teach-icon"><i class="fas fa-brain" style="color:var(--teal);"></i></div>
+        <div class="teach-title">Trading Psychology</div>
+        <div class="teach-desc">Control fear and greed, maintain discipline, develop a winning trader mindset.</div>
+      </div>
+      <div class="teach-card reveal">
+        <div class="teach-icon"><i class="fas fa-umbrella" style="color:#2ecc71;"></i></div>
+        <div class="teach-title">Risk Management</div>
+        <div class="teach-desc">Position sizing, stop-loss strategies, and capital preservation — the #1 skill.</div>
+      </div>
+      <div class="teach-card reveal">
+        <div class="teach-icon"><i class="fas fa-layer-group" style="color:var(--blue-glow);"></i></div>
+        <div class="teach-title">Portfolio Building</div>
+        <div class="teach-desc">Diversify across sectors, balance risk vs reward, build a growing portfolio.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE ME -->
+<section id="why">
+  <div class="container">
+    <div class="why-inner">
+      <div class="reveal">
+        <div class="section-label"><i class="fas fa-trophy"></i> Why Me</div>
+        <h2 class="section-title">Honest Advice.<br><em>Real Results.</em></h2>
+        <p class="section-sub" style="margin-bottom:36px;">I may be a fresher in terms of years, but my passion, knowledge, and commitment to your success is unmatched. Here's why clients trust me.</p>
+        <div class="why-list">
+          <div class="why-item">
+            <div class="why-icon"><i class="fas fa-heart"></i></div>
+            <div class="why-text">
+              <h4>Genuine Passion for Markets</h4>
+              <p>I don't just advise — I live and breathe the stock market every day. My content comes from real research, not recycled tips.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-icon"><i class="fas fa-language"></i></div>
+            <div class="why-text">
+              <h4>Teaches in Simple Language</h4>
+              <p>No complicated jargon. I explain complex market concepts in Telugu, Hindi, and English so you truly understand.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-icon"><i class="fas fa-handshake"></i></div>
+            <div class="why-text">
+              <h4>Completely Transparent</h4>
+              <p>Zero hidden fees, zero misleading tips. I share both wins and lessons openly — trust is the foundation of every relationship.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-icon"><i class="fas fa-users"></i></div>
+            <div class="why-text">
+              <h4>Community-Focused</h4>
+              <p>Building a local investor community in Andhra Pradesh where people support each other's financial journeys together.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="why-visual reveal">
+        <div class="why-stat-card">
+          <div class="why-stat-num">100<span>+</span></div>
+          <div class="why-stat-label"><i class="fas fa-users" style="margin-right:4px;"></i>People Educated</div>
+          <div class="why-progress"><div class="why-progress-fill" style="width:75%"></div></div>
+        </div>
+        <div class="why-stat-card">
+          <div class="why-stat-num">5<span>★</span></div>
+          <div class="why-stat-label"><i class="fas fa-star" style="margin-right:4px;"></i>Average Rating</div>
+          <div class="why-progress"><div class="why-progress-fill" style="width:100%"></div></div>
+        </div>
+        <div class="why-stat-card">
+          <div class="why-stat-num">8<span>+</span></div>
+          <div class="why-stat-label"><i class="fas fa-book" style="margin-right:4px;"></i>Topics Covered</div>
+          <div class="why-progress"><div class="why-progress-fill" style="width:70%"></div></div>
+        </div>
+        <div class="why-stat-card">
+          <div class="why-stat-num">0<span>₹</span></div>
+          <div class="why-stat-label"><i class="fas fa-gift" style="margin-right:4px;"></i>Cost for Basic Tips</div>
+          <div class="why-progress"><div class="why-progress-fill" style="width:100%"></div></div>
+        </div>
+        <div class="why-stat-card span2" style="background:linear-gradient(135deg,#081428,#0c1e38);border-color:rgba(58,159,214,0.3);">
+          <div style="font-size:1.8rem;margin-bottom:10px;">🚀</div>
+          <div style="font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;margin-bottom:8px;">Ready to Start Your Journey?</div>
+          <div style="font-size:0.82rem;color:var(--gray);margin-bottom:16px;">Join others from Andhra Pradesh who are learning the stock market the right way.</div>
+          <a href="#contact" class="btn-primary" style="justify-content:center;display:inline-flex;"><i class="fas fa-paper-plane"></i> Get in Touch</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section id="team">
+  <div class="container">
+    <div class="team-intro reveal">
+      <div class="section-label" style="justify-content:center;"><i class="fas fa-users"></i> Our Team</div>
+      <h2 class="section-title" style="text-align:center;">The People Behind<br>Your <em>Success</em></h2>
+      <p class="section-sub" style="text-align:center;margin:0 auto;">A passionate team committed to your financial education and market success.</p>
+    </div>
+    <div class="team-grid">
+      <!-- LEADER -->
+      <div class="team-card leader reveal">
+        <div class="team-avatar" style="background:linear-gradient(135deg,var(--blue),var(--teal));">UF</div>
+        <div class="team-info">
+          <div class="team-leader-badge"><i class="fas fa-crown" style="margin-right:4px;"></i>Founder &amp; CEO</div>
+          <div class="team-name">Umar Farooq Shaik</div>
+          <div class="team-role"><i class="fas fa-chart-line" style="margin-right:5px;"></i>Stock Market Advisor &amp; Educator</div>
+          <div class="team-desc">Founder of Farooq Infrastructure Pvt Ltd. Passionate about making the stock market accessible to everyone in Andhra Pradesh and beyond.</div>
+          <div class="team-socials">
+            <a href="https://www.instagram.com/farooq.livee/" target="_blank" class="team-social-btn" title="@farooq.livee"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/919440319848" target="_blank" class="team-social-btn" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:shaikumarfarooq5541@gmail.com" class="team-social-btn" title="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- CH HASINI -->
+      <div class="team-card reveal">
+        <div class="team-avatar" style="background:linear-gradient(135deg,#1a5fa0,#1db8c4);">CH</div>
+        <div class="team-name">Ch. Hasini</div>
+        <div class="team-role"><i class="fas fa-search-dollar" style="margin-right:5px;"></i>Market Research Analyst</div>
+        <div class="team-desc">Specialises in market research, data analysis, and identifying emerging investment opportunities for clients.</div>
+
+      </div>
+      <!-- P SURYA GOUD -->
+      <div class="team-card reveal">
+        <div class="team-avatar" style="background:linear-gradient(135deg,#1e3a8a,#3a9fd6);">PS</div>
+        <div class="team-name">P. Surya Goud</div>
+        <div class="team-role"><i class="fas fa-chart-pie" style="margin-right:5px;"></i>Technical Analyst</div>
+        <div class="team-desc">Expert in technical charting, pattern recognition, and delivering actionable trade insights to students.</div>
+
+      </div>
+      <!-- M ANSHUMAN -->
+      <div class="team-card reveal">
+        <div class="team-avatar" style="background:linear-gradient(135deg,#0d3b6e,#1db8c4);">MA</div>
+        <div class="team-name">M. Anshuman</div>
+        <div class="team-role"><i class="fas fa-bullhorn" style="margin-right:5px;"></i>Education Coordinator</div>
+        <div class="team-desc">Manages student onboarding, study materials, and coordinates educational sessions and workshops.</div>
+
+      </div>
+      <!-- K SAI SIDHARTH -->
+      <div class="team-card reveal">
+        <div class="team-avatar" style="background:linear-gradient(135deg,#162a5c,#3a9fd6);">KS</div>
+        <div class="team-name">K. Sai Sidharth</div>
+        <div class="team-role"><i class="fas fa-shield-alt" style="margin-right:5px;"></i>Risk Management Lead</div>
+        <div class="team-desc">Focuses on risk control strategies, portfolio protection, and helping clients preserve their capital safely.</div>
+
+      </div>
+      <!-- R JASHWANTH -->
+      <div class="team-card reveal">
+        <div class="team-avatar" style="background:linear-gradient(135deg,#1a3a6b,#1db8c4);">RJ</div>
+        <div class="team-name">R. Jashwanth</div>
+        <div class="team-role"><i class="fas fa-building" style="margin-right:5px;"></i>Fundamental Analyst</div>
+        <div class="team-desc">Analyses company financials, sector trends, and identifies fundamentally strong stocks for long-term investing.</div>
+
+      </div>
+      <!-- N SAI SIDHARTH -->
+      <div class="team-card reveal">
+        <div class="team-avatar" style="background:linear-gradient(135deg,#0c2d5e,#3a9fd6);">NS</div>
+        <div class="team-name">N. Sai Sidharth</div>
+        <div class="team-role"><i class="fas fa-comments" style="margin-right:5px;"></i>Client Relations</div>
+        <div class="team-desc">Handles client communications, feedback, and ensures every student gets the support they need to succeed.</div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="container">
+    <div class="reveal" style="text-align:center;">
+      <div class="section-label" style="justify-content:center;"><i class="fas fa-star"></i> Testimonials</div>
+      <h2 class="section-title" style="text-align:center;">What People <em>Say</em></h2>
+      <p class="section-sub" style="text-align:center;margin:0 auto;">Real feedback from students and clients who trusted me with their financial learning.</p>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testi-card reveal">
+        <div class="testi-quote-icon"><i class="fas fa-quote-left"></i></div>
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Umar explained candlestick patterns in a way no YouTube video could. Within 2 weeks I understood how to read charts completely. Highly recommend!"</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:rgba(58,159,214,0.15);color:var(--teal);">RK</div>
+          <div>
+            <div class="testi-name">Ravi Kumar</div>
+            <div class="testi-loc"><i class="fas fa-map-marker-alt" style="margin-right:3px;font-size:.65rem;"></i>Guntur, Andhra Pradesh</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="testi-quote-icon"><i class="fas fa-quote-left"></i></div>
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Bhai ne Telugu lo explain chesadu — market antha clear ga artham ayyindi. His free Instagram content alone is better than paid courses!"</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:rgba(201,145,42,0.12);color:var(--gold);">SP</div>
+          <div>
+            <div class="testi-name">Sai Pradeep</div>
+            <div class="testi-loc"><i class="fas fa-map-marker-alt" style="margin-right:3px;font-size:.65rem;"></i>Narasaraopet, AP</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="testi-quote-icon"><i class="fas fa-quote-left"></i></div>
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"I was scared of losing money in stocks. Umar taught me risk management first. Now I trade with confidence and never risk more than I can afford."</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:rgba(29,184,196,0.12);color:var(--teal);">MR</div>
+          <div>
+            <div class="testi-name">Mohammed Riyaz</div>
+            <div class="testi-loc"><i class="fas fa-map-marker-alt" style="margin-right:3px;font-size:.65rem;"></i>Piduguralla, AP</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="testi-quote-icon"><i class="fas fa-quote-left"></i></div>
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"The one-on-one consultation changed everything for me. Umar analysed my portfolio and fixed the mistakes I've been making for years."</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:rgba(58,159,214,0.15);color:var(--blue-glow);">VS</div>
+          <div>
+            <div class="testi-name">Venkata Sai</div>
+            <div class="testi-loc"><i class="fas fa-map-marker-alt" style="margin-right:3px;font-size:.65rem;"></i>Vijayawada, AP</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="testi-quote-icon"><i class="fas fa-quote-left"></i></div>
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"A true expert who actually cares about his students. The technical analysis sessions were eye-opening and super practical."</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:rgba(201,145,42,0.12);color:var(--gold);">KK</div>
+          <div>
+            <div class="testi-name">Kiran Kumar</div>
+            <div class="testi-loc"><i class="fas fa-map-marker-alt" style="margin-right:3px;font-size:.65rem;"></i>Guntur, AP</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="testi-quote-icon"><i class="fas fa-quote-left"></i></div>
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"I started with zero knowledge. Umar's step-by-step guidance made complex fundamental analysis feel like basic math. Highly grateful!"</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:rgba(29,184,196,0.12);color:var(--teal);">AN</div>
+          <div>
+            <div class="testi-name">Arjun Naidu</div>
+            <div class="testi-loc"><i class="fas fa-map-marker-alt" style="margin-right:3px;font-size:.65rem;"></i>Hyderabad, TS</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<div class="cta-banner reveal">
+  <h2>Ready to Master the <span style="color:var(--teal)">Stock Market?</span></h2>
+  <p>Get your free consultation today. No pressure, no commitment — just honest market guidance.</p>
+  <div class="cta-btns">
+    <a href="tel:9440319848" class="btn-primary"><i class="fas fa-phone"></i> Call Now</a>
+    <a href="mailto:shaikumarfarooq5541@gmail.com" class="btn-secondary"><i class="fas fa-envelope"></i> Email Me</a>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-inner">
+      <div class="reveal">
+        <div class="section-label"><i class="fas fa-paper-plane"></i> Get in Touch</div>
+        <h2 class="contact-info-title">Let's Talk <span style="color:var(--teal)">Markets</span></h2>
+        <p class="contact-info-sub">Have questions about stocks? Want to start learning? Reach out — I respond to every message personally.</p>
+        <div class="contact-detail">
+          <div class="contact-detail-icon"><i class="fas fa-phone-alt"></i></div>
+          <div>
+            <div class="contact-detail-label"><i class="fab fa-whatsapp" style="margin-right:3px;"></i>Mobile / WhatsApp</div>
+            <div class="contact-detail-val">+91 94403 19848</div>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon"><i class="fas fa-envelope"></i></div>
+          <div>
+            <div class="contact-detail-label"><i class="fas fa-at" style="margin-right:3px;"></i>Email Address</div>
+            <div class="contact-detail-val">shaikumarfarooq5541@gmail.com</div>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <div class="contact-detail-label"><i class="fas fa-location-dot" style="margin-right:3px;"></i>Location</div>
+            <div class="contact-detail-val">Piduguralla, Palnadu District, AP</div>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon"><i class="fab fa-instagram"></i></div>
+          <div>
+            <div class="contact-detail-label"><i class="fas fa-camera" style="margin-right:3px;"></i>Instagram Profile</div>
+            <div class="contact-detail-val">@farooq.livee</div>
+          </div>
+        </div>
+        <div style="margin-top:28px;display:flex;flex-wrap:wrap;gap:12px;">
+          <a href="https://wa.me/919440319848?text=Hi%20Umar%2C%20I%20want%20to%20learn%20about%20stock%20market" target="_blank" class="btn-primary" style="display:inline-flex;">
+            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+          </a>
+          <a href="https://www.instagram.com/farooq.livee/" target="_blank" class="btn-secondary" style="display:inline-flex;">
+            <i class="fab fa-instagram"></i> Follow Me
+          </a>
+        </div>
+      </div>
+      <div class="contact-form reveal">
+        <div class="form-title"><i class="fas fa-envelope-open-text" style="color:var(--teal);margin-right:8px;"></i>Send Me a Message</div>
+        <div class="form-row">
+          <div class="form-group">
+            <label><i class="fas fa-user" style="margin-right:4px;"></i>Your Name</label>
+            <input type="text" id="fname" placeholder="e.g. Ravi Kumar"/>
+          </div>
+          <div class="form-group">
+            <label><i class="fas fa-phone" style="margin-right:4px;"></i>Phone / WhatsApp</label>
+            <input type="tel" id="fphone" placeholder="+91 XXXXX XXXXX"/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label><i class="fas fa-envelope" style="margin-right:4px;"></i>Email Address</label>
+          <input type="email" id="femail" placeholder="your@email.com"/>
+        </div>
+        <div class="form-group">
+          <label><i class="fas fa-list" style="margin-right:4px;"></i>I'm Interested In</label>
+          <select id="fservice">
+            <option value="">Select a service...</option>
+            <option>Stock Market Education (Beginner)</option>
+            <option>1-on-1 Consultation</option>
+            <option>Technical Analysis Coaching</option>
+            <option>Risk Management Planning</option>
+            <option>Fundamental Analysis</option>
+            <option>Portfolio Review</option>
+            <option>Just want to learn!</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label><i class="fas fa-comment-alt" style="margin-right:4px;"></i>Your Message</label>
+          <textarea id="fmsg" rows="4" placeholder="Tell me about your goals or questions..."></textarea>
+        </div>
+        <button class="form-submit" onclick="submitForm()">
+          <i class="fas fa-paper-plane"></i> Send Message
+        </button>
+        <div class="form-success" id="formSuccess">
+          <i class="fas fa-check-circle" style="font-size:1.5rem;margin-bottom:8px;display:block;"></i>
+          Message sent! I'll reach out soon. Meanwhile, follow me on Instagram @farooq.livee
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-copy" style="margin-bottom:6px;">
+        © 2025 <span>Farooq Infrastructure Pvt Ltd</span> · Management: Umar Farooq Shaik
+      </div>
+      <div class="footer-copy" style="font-size:.75rem;">
+        <i class="fas fa-map-marker-alt" style="margin-right:4px;color:var(--teal);"></i>Piduguralla, Palnadu District, Andhra Pradesh &nbsp;·&nbsp;
+        <a href="tel:+919440319848" style="color:inherit;text-decoration:none;"><i class="fas fa-phone" style="margin-right:4px;color:var(--teal);"></i>+91 94403 19848</a>
+      </div>
+      <div class="footer-copy" style="font-size:.75rem; margin-top:10px;">
+        Designed and developed by <a href="https://shivamaniwebdev.vercel.app/" target="_blank" style="color:var(--teal);text-decoration:none;font-weight:600;">BK.SHIVAMANI</a>
+        <a href="https://www.instagram.com/why.sh1vaa/" target="_blank" style="color:var(--gray);margin-left:8px;"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/shivamanikolu" target="_blank" style="color:var(--gray);margin-left:8px;"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+    <div class="footer-links">
+      <a href="#about"><i class="fas fa-user" style="margin-right:4px;"></i>About</a>
+      <a href="#services"><i class="fas fa-briefcase" style="margin-right:4px;"></i>Services</a>
+      <a href="#team"><i class="fas fa-users" style="margin-right:4px;"></i>Team</a>
+      <a href="#contact"><i class="fas fa-envelope" style="margin-right:4px;"></i>Contact</a>
+      <a href="https://www.instagram.com/farooq.livee/" target="_blank"><i class="fab fa-instagram" style="margin-right:4px;"></i>Instagram</a>
+      <a href="privacy-policy.html"><i class="fas fa-shield-alt" style="margin-right:4px;"></i>Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Cookie Consent Banner -->
+<div id="cookieBanner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:rgba(7,12,20,0.97);border-top:1px solid rgba(58,159,214,0.25);padding:18px 24px;z-index:9998;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px;">
+  <p style="margin:0;color:#b0bec5;font-size:.85rem;max-width:700px;">
+    <i class="fas fa-cookie-bite" style="color:var(--teal);margin-right:6px;"></i>
+    We use cookies to analyse website traffic and improve your experience. By continuing, you agree to our
+    <a href="privacy-policy.html" style="color:var(--teal);text-decoration:underline;">Privacy Policy</a>.
+  </p>
+  <div style="display:flex;gap:10px;">
+    <button onclick="acceptCookies()" style="background:var(--teal);color:#000;border:none;padding:9px 22px;border-radius:8px;font-weight:700;cursor:pointer;font-size:.85rem;">Accept</button>
+    <button onclick="declineCookies()" style="background:transparent;color:#b0bec5;border:1px solid rgba(255,255,255,0.15);padding:9px 18px;border-radius:8px;cursor:pointer;font-size:.85rem;">Decline</button>
+  </div>
+</div>
+
+</main>
+
+<script>
+  // Cookie consent banner
+  (function() {
+    if (!localStorage.getItem('cookieConsent')) {
+      document.getElementById('cookieBanner').style.display = 'flex';
+    }
+  })();
+  function acceptCookies() {
+    localStorage.setItem('cookieConsent', 'accepted');
+    document.getElementById('cookieBanner').style.display = 'none';
+  }
+  function declineCookies() {
+    localStorage.setItem('cookieConsent', 'declined');
+    document.getElementById('cookieBanner').style.display = 'none';
+  }
+
+  window.addEventListener('scroll', () => {
+    document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+  });
+  function toggleNav() {
+    const navLinks = document.getElementById('navLinks');
+    const hamburger = document.getElementById('hamburger');
+    const isOpen = navLinks.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  }
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open'));
+  });
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) { setTimeout(() => entry.target.classList.add('visible'), 80); observer.unobserve(entry.target); }
+    });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  // ── EmailJS Configuration ─────────────────────────────────────────────
+  emailjs.init('7txJKb_qYF3UyFByK');
+
+  function submitForm() {
+    const name     = document.getElementById('fname').value.trim();
+    const phone    = document.getElementById('fphone').value.trim();
+    const email    = document.getElementById('femail').value.trim();
+    const service  = document.getElementById('fservice').value;
+    const umessage = document.getElementById('fmsg').value.trim();
+
+    if (!name || !phone) { alert('Please enter your name and phone number.'); return; }
+
+    // Disable button & show spinner to prevent double-submit
+    const btn = document.querySelector('.form-submit');
+    btn.disabled = true;
+    btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+
+    // Template variables — must match EmailJS template exactly
+    const templateParams = {
+      from_name:    name,
+      from_phone:   phone,
+      from_email:   email    || 'Not provided',
+      service_type: service  || 'Not selected',
+      message:      umessage || 'No message provided'
+    };
+
+    // Send email via EmailJS, then open WhatsApp regardless of outcome
+    emailjs.send('service_zz3zze3', 'template_ltelrgh', templateParams)
+      .then(() => {
+        console.log('✅ EmailJS: Email sent successfully.');
+      })
+      .catch((err) => {
+        console.error('❌ EmailJS error:', JSON.stringify(err));
+      })
+      .finally(() => {
+        // Always show success and open WhatsApp
+        btn.style.display = 'none';
+        document.getElementById('formSuccess').style.display = 'block';
+
+        let text = `Hi Umar! I'm ${name}.\nContact: ${phone}\n`;
+        if(email)    text += `Email: ${email}\n`;
+        if(service)  text += `Interested In: ${service}\n`;
+        if(umessage) text += `Message: ${umessage}\n`;
+
+        const msg = encodeURIComponent(text);
+        setTimeout(() => { window.open(`https://wa.me/919440319848?text=${msg}`, '_blank'); }, 600);
+      });
+  }
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      const t = document.querySelector(a.getAttribute('href'));
+      if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+</script>
+</body>
+</html>
