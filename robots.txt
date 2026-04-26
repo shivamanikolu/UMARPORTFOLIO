@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://umar-portfolio.vercel.app/sitemap.xml
+Sitemap: https://farooqinfrastructures.vercel.app/sitemap.xml
